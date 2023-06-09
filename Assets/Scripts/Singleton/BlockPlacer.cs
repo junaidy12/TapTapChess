@@ -63,11 +63,7 @@ public class BlockPlacer : MonoBehaviour
 
                     while (invalidPositionList.Count > i)
                     {
-                        if (LevelGrid.Instance.GetGridObject(invalidPositionList[i]).block.blockType == Block.BlockType.Default)
-                        {
-                            attack = false;
-                        }
-                        else
+                        if (LevelGrid.Instance.GetGridObject(invalidPositionList[i]).block.blockType != Block.BlockType.Default)
                         {
                             attack = true;
                             break;
