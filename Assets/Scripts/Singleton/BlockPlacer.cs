@@ -45,7 +45,7 @@ public class BlockPlacer : MonoBehaviour
         {
             timer -= Time.deltaTime;
             if (timer < 0) gameOver = true;
-            PlaceBlock()();
+            PlaceBlock();
         }
     }
     void PlaceBlock()
